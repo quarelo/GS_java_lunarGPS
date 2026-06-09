@@ -14,7 +14,6 @@ public class Obstaculo extends EntidadeBase {
     private String acaoRecomendada;
     private Rota rota;
 
-    // Construtor completo (com associacao de Rota do UML)
     public Obstaculo(int id, String tipo, String descricao, NivelRisco nivelRisco,
                      float latitude, float longitude, float raioImpacto,
                      boolean contornavel, String acaoRecomendada, Rota rota) {
@@ -30,7 +29,6 @@ public class Obstaculo extends EntidadeBase {
         this.rota = rota;
     }
 
-    // Construtor sem rota associada
     public Obstaculo(int id, String tipo, String descricao, NivelRisco nivelRisco,
                      float latitude, float longitude, float raioImpacto,
                      boolean contornavel, String acaoRecomendada) {

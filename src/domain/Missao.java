@@ -18,7 +18,6 @@ public class Missao extends EntidadeBase {
     private LocalDateTime dataFimReal;
     private float distanciaTotal;
 
-    // Construtor completo
     public Missao(int id, String nome, String descricao, String objetivo,
                   StatusMissao status, PrioridadeMissao prioridade,
                   LocalDateTime dataInicio, LocalDateTime dataPrevisaoFim,
@@ -35,7 +34,6 @@ public class Missao extends EntidadeBase {
         this.distanciaTotal = distanciaTotal;
     }
 
-    // Construtor rapido (nome + objetivo + prioridade)
     public Missao(int id, String nome, String objetivo, PrioridadeMissao prioridade) {
         super(id);
         this.nome = nome;

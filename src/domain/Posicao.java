@@ -14,7 +14,6 @@ public class Posicao extends EntidadeBase {
     private Astronauta astronauta;
     private Satelite satelite;
 
-    // Construtor completo (com associacoes do UML)
     public Posicao(int id, float latitude, float longitude, float altitude,
                    float precisao, LocalDateTime timestamp, char tipoRegistro,
                    Astronauta astronauta, Satelite satelite) {
@@ -29,7 +28,6 @@ public class Posicao extends EntidadeBase {
         this.satelite = satelite;
     }
 
-    // Construtor sem associacoes (posicao independente)
     public Posicao(int id, float latitude, float longitude, float altitude,
                    float precisao, LocalDateTime timestamp, char tipoRegistro) {
         this(id, latitude, longitude, altitude, precisao, timestamp, tipoRegistro, null, null);

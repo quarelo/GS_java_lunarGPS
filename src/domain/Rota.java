@@ -19,7 +19,6 @@ public class Rota extends EntidadeBase {
     private Posicao destino;
     private Missao missao;
 
-    // Construtor completo (com associacoes do UML)
     public Rota(int id, String nome, StatusRota status, float distanciaTotal,
                 float consumoEnergiaEst, float tempoEstimado, TipoRota tipoRota,
                 LocalDateTime dataCriacao, Posicao origem, Posicao destino, Missao missao) {
@@ -36,7 +35,6 @@ public class Rota extends EntidadeBase {
         this.missao = missao;
     }
 
-    // Construtor sem missao
     public Rota(int id, String nome, StatusRota status, float distanciaTotal,
                 float consumoEnergiaEst, float tempoEstimado, TipoRota tipoRota,
                 LocalDateTime dataCriacao, Posicao origem, Posicao destino) {

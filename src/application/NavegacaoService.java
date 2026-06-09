@@ -27,7 +27,6 @@ public class NavegacaoService {
         return repositorio.listarTodos();
     }
 
-    // Overload 1: calcula distancia entre coordenadas de superficie
     public double calcularDistancia(float lat1, float lon1, float lat2, float lon2) {
         double dLat = Math.toRadians(lat2 - lat1);
         double dLon = Math.toRadians(lon2 - lon1);
@@ -38,7 +37,6 @@ public class NavegacaoService {
         return RAIO_LUNAR_KM * c;
     }
 
-    // Overload 2: calcula distancia 3D (latitude, longitude e altitude)
     public double calcularDistancia(float lat1, float lon1, float alt1,
                                     float lat2, float lon2, float alt2) {
         double distSup = calcularDistancia(lat1, lon1, lat2, lon2);
@@ -46,7 +44,6 @@ public class NavegacaoService {
         return Math.sqrt(distSup * distSup + deltaAltKm * deltaAltKm);
     }
 
-    // Overload 3: calcula distancia a partir de dois objetos Posicao
     public double calcularDistancia(Posicao p1, Posicao p2) {
         return calcularDistancia(
                 p1.getLatitude(), p1.getLongitude(), p1.getAltitude(),

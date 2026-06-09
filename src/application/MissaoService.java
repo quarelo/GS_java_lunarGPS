@@ -12,7 +12,6 @@ public class MissaoService {
 
     private final MissaoRepositorio repositorio = new MissaoRepositorio();
 
-    // Overload 1: criacao rapida (nome + objetivo)
     public Missao criar(String nome, String objetivo) {
         Missao missao = new Missao(0, nome, objetivo, PrioridadeMissao.MEDIA);
         repositorio.salvar(missao);
@@ -20,7 +19,6 @@ public class MissaoService {
         return missao;
     }
 
-    // Overload 2: criacao com descricao e prioridade
     public Missao criar(String nome, String descricao, String objetivo, PrioridadeMissao prioridade) {
         Missao missao = new Missao(0, nome, descricao, objetivo,
                 StatusMissao.PLANEJADA, prioridade, LocalDateTime.now(), null, null, 0);
@@ -29,7 +27,6 @@ public class MissaoService {
         return missao;
     }
 
-    // Overload 3: criacao completa com datas
     public Missao criar(String nome, String descricao, String objetivo, PrioridadeMissao prioridade,
                         LocalDateTime dataInicio, LocalDateTime dataPrevisaoFim) {
         Missao missao = new Missao(0, nome, descricao, objetivo,
