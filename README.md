@@ -206,4 +206,5 @@ EntidadeBase  (abstract)
 
 ## Grupo
 
-Projeto desenvolvido para a disciplina **Domain Driven Design** — FIAP Global Solution 2025.
+Grupo KOLIA
+Nicolas Baradel - José Kaneto - Enzo Quarelo - Gabriel Thompson - João Pedro Sassarão
